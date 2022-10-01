@@ -1,0 +1,1954 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "502fa305",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the num1 value:\n",
+      "10\n",
+      "Enter the num2 value: \n",
+      "20\n",
+      "Sum of 10 and 20 is 30\n"
+     ]
+    }
+   ],
+   "source": [
+    "#1.Write a program to accept two numbers from the user, calculate the sum and display the same.\n",
+    "num1=int(input(\"Enter the num1 value:\\n\"))\n",
+    "num2=int(input(\"Enter the num2 value: \\n\"))\n",
+    "sum=num1+num2\n",
+    "print(\"Sum of\",num1 ,\"and\", num2 ,\"is\" ,sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "1aba70dd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the weight of the first person: \n",
+      "55.5\n",
+      "Enter the weight of the first person: \n",
+      "45.4\n",
+      "Enter the weight of the first person: \n",
+      "65.6\n",
+      "The sum of weight of the 3 persons is 166.5 Kgs and the average weight is 55.5 Kgs\n"
+     ]
+    }
+   ],
+   "source": [
+    "#2.Write a program to accept the weight of 3 persons, calculate the total weight, determine the average weight and display these details.\n",
+    "firstperson=float(input(\"Enter the weight of the first person: \\n\"))\n",
+    "secondperson=float(input(\"Enter the weight of the first person: \\n\"))\n",
+    "thirdperson=float(input(\"Enter the weight of the first person: \\n\"))\n",
+    "sum=firstperson+secondperson+thirdperson\n",
+    "avg=(firstperson+secondperson+thirdperson)/3\n",
+    "print(\"The sum of weight of the 3 persons is\",sum, \"Kgs and the average weight is\",avg,\"Kgs\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "72ca5540",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the empno: \n",
+      "1001\n",
+      "Enter the employee name: \n",
+      "Ramana\n",
+      "Enter the monthly salary: \n",
+      "25000\n",
+      "Hi Ramana Your employee id is 1001 monthly salary is Rs 25,000 and yearly salary is Rs 300,000\n"
+     ]
+    }
+   ],
+   "source": [
+    "#3.Write a program to accept the following details of an employee: empno, name and monthly salary; calculate the yearly salary and display the result.\n",
+    "id=int(input(\"Enter the empno: \\n\"))\n",
+    "name=input(\"Enter the employee name: \\n\")\n",
+    "salary=int(input(\"Enter the monthly salary: \\n\"))\n",
+    "salary1=f\"{salary:,}\"\n",
+    "yearly=salary*12\n",
+    "yearly1=f\"{yearly:,}\"\n",
+    "print(\"Hi\", name, \"Your employee id is\", id, \"monthly salary is Rs\" ,salary1 ,\"and yearly salary is Rs\",yearly1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "130f3c00",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the first number num1: \n",
+      "100\n",
+      "Enter the first number num2: \n",
+      "200\n",
+      "Before swap, the values of num1 = 100 and num2 = 200\n",
+      "After swap, the values of num1 200 and num2 = 100\n"
+     ]
+    }
+   ],
+   "source": [
+    "#4.Write a program to accept two numbers from the user, swap their values and display the result.\n",
+    "num1=int(input(\"Enter the first number num1: \\n\"))\n",
+    "num2=int(input(\"Enter the first number num2: \\n\"))\n",
+    "print(\"Before swap, the values of num1 =\",num1,\"and num2 =\",num2)\n",
+    "temp=num1\n",
+    "num1=num2\n",
+    "num2=temp\n",
+    "print(\"After swap, the values of num1\",num1,\"and num2 =\",num2)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "25c65726",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the principal amount:\n",
+      "20000\n",
+      "Enter the rate of interest:\n",
+      "1.5\n",
+      "Enter the time (years):\n",
+      "2\n",
+      "Simple interest is 600\n"
+     ]
+    }
+   ],
+   "source": [
+    "#5. Write a program to accept the principal amount, rate of interest, time and calculate the simple interest.\n",
+    "p=int(input(\"Enter the principal amount:\\n\"))\n",
+    "r=float(input(\"Enter the rate of interest:\\n\"))\n",
+    "t=int(input(\"Enter the time (years):\\n\"))\n",
+    "SI=((p*t*r)/100)\n",
+    "print(\"Simple interest is\",int(SI))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "790e2920",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a number:\n",
+      "-10\n",
+      "The result is: 10\n"
+     ]
+    }
+   ],
+   "source": [
+    "#6.Write a program to accept a number, if it is negative then covert it to a positive number.\n",
+    "num=int(input(\"Enter a number:\\n\"))\n",
+    "if(num<0):\n",
+    "    print(\"The result is:\",num*(-1))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "f2c5b7c9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the billing amount: \n",
+      "6500\n",
+      "Your net billing amount: 5850\n"
+     ]
+    }
+   ],
+   "source": [
+    "#7.Write a program to accept the billing amount, if it is > 6000 then give a discount of 10% and display the net amount.\n",
+    "bill=int(input(\"Enter the billing amount: \\n\"))\n",
+    "dis=bill*10/100\n",
+    "disbill=bill-dis\n",
+    "if(bill>6000):\n",
+    "    print(\"Your net billing amount:\",int(disbill))\n",
+    "else:\n",
+    "    print(\"Your net billing amount:\" ,bill)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "a4edd125",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the billing amount: \n",
+      "5500\n",
+      "Your net billing amount: 5500\n"
+     ]
+    }
+   ],
+   "source": [
+    "#7.Write a program to accept the billing amount, if it is > 6000 then give a discount of 10% and display the net amount.\n",
+    "bill=int(input(\"Enter the billing amount: \\n\"))\n",
+    "dis=bill*10/100\n",
+    "disbill=bill-dis\n",
+    "if(bill>6000):\n",
+    "    print(\"Your net billing amount:\",int(disbill))\n",
+    "else:\n",
+    "    print(\"Your net billing amount:\" ,bill)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "ec802ea9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the name: \n",
+      "Lakshman\n",
+      "Enter the mobile number: \n",
+      "989999999\n",
+      "Enter the age: \n",
+      "30\n",
+      "Congratulations Lakshman for your successful registration\n"
+     ]
+    }
+   ],
+   "source": [
+    "#8.The Sports Club registration form has the following details: name, mobile number and age. Per the membership policy, the person should be at least 18 years old to become a member. Write a program to accept the details mentioned above; if the age is >18 years then display the entered details with a congratulatory message, else the following message should be displayed “Sorry! You need to be at least 18 years old to get membership.”\n",
+    "\n",
+    "name=input(\"Enter the name: \\n\")\n",
+    "mobile_number=input(\"Enter the mobile number: \\n\") \n",
+    "age=int(input(\"Enter the age: \\n\"))\n",
+    "if(age<18):\n",
+    "    print(\"Sorry! You need to be at least 18 years old to get membership\")\n",
+    "   \n",
+    " else:\n",
+    "    print(\"Congratulations\", name,'for your successful registration')\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "0bc35494",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a number: \n",
+      "11\n",
+      "The entered number 11 is odd\n"
+     ]
+    }
+   ],
+   "source": [
+    "#9. Write a program to accept a number from the user and determine whether it is even or odd.\n",
+    "num=int(input(\"Enter a number: \\n\"))\n",
+    "if(num%2==0):\n",
+    "    print(\"The entered number\",num,\"is even\")\n",
+    "else:\n",
+    "     print(\"The entered number\",num,\"is odd\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "b8ad1398",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the first number num1: \n",
+      "20\n",
+      "Enter the second number num2: \n",
+      "45\n",
+      "The bigger of the two numbers entered( 20 and 45 ) is: 45\n"
+     ]
+    }
+   ],
+   "source": [
+    "#10.Write a program to accept two numbers from the user and determine bigger of the two.\n",
+    "\n",
+    "num1=int(input(\"Enter the first number num1: \\n\"))\n",
+    "num2=int(input(\"Enter the second number num2: \\n\"))\n",
+    "if(num1>num2):\n",
+    "    print(\"The bigger of the two numbers entered(\",num1, \"and\",num2,\") is:\" ,num1)\n",
+    "else:\n",
+    "    print(\"The bigger of the two numbers entered(\",num1, \"and\",num2,\") is:\" ,num2)\n",
+    "    \n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "a47f6930",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the first number num1: \n",
+      "35\n",
+      "Enter the second number num2: \n",
+      "45\n",
+      "The result (difference) is:  10\n"
+     ]
+    }
+   ],
+   "source": [
+    "#11.Write a program to accept two numbers num1 and num2; when one is subtracted from the other, the result should always be a positive number.\n",
+    "num1=int(input(\"Enter the first number num1: \\n\"))\n",
+    "num2=int(input(\"Enter the second number num2: \\n\"))\n",
+    "result=num1-num2\n",
+    "if(result<0):\n",
+    "    print(\"The result (difference) is: \",(result*-1))\n",
+    "else:\n",
+    "    print(\"The result (difference) is: >\",(result))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "0877639e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the first number num1: \n",
+      "35\n",
+      "Enter the second number num2: \n",
+      "45\n",
+      "The result (difference) is:  10\n"
+     ]
+    }
+   ],
+   "source": [
+    "#11.Write a program to accept two numbers num1 and num2; when one is subtracted from the other, the result should always be a positive number.\n",
+    "num1=int(input(\"Enter the first number num1: \\n\"))\n",
+    "num2=int(input(\"Enter the second number num2: \\n\"))\n",
+    "result=num1-num2\n",
+    "if(result<0):\n",
+    "    print(\"The result (difference) is: \",(result*-1))\n",
+    "else:\n",
+    "    print(\"The result (difference) is: \",(result))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "1cfb3488",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the bill amount: \n",
+      "5000\n",
+      "Do you have a membership card? \n",
+      "Y\n",
+      "Thank you! Your total bill amount is Rs 5000 discount is Rs 500 and net amount payable is Rs  4500\n"
+     ]
+    }
+   ],
+   "source": [
+    "#12.In a shopping mall, privileged customers (if they have a membership card) are being given a 10% discount on the billed amount, and the others are being given a 3% discount. Write a program to accept the billing amount and confirm the membership card from the customer; calculate and display the net amount to be paid by the customer.\n",
+    "bill=int(input(\"Enter the bill amount: \\n\"))\n",
+    "membership=input(\"Do you have a membership card? \\n\")\n",
+    "membership=membership.capitalize()\n",
+    "bill1=bill*10/100\n",
+    "privileged_customers=bill-bill1 \n",
+    "bill2=bill*3/100\n",
+    "privileged_customers2=bill-bill2\n",
+    "\n",
+    "\n",
+    "if(membership==\"Y\"):\n",
+    "    print(\"Thank you! Your total bill amount is Rs\",int(bill), \"discount is Rs\",int(bill1), \"and net amount payable is Rs \",int(privileged_customers))\n",
+    "else:\n",
+    "     print(\"Thank you! Your total bill amount is Rs\",int(bill), \"discount is Rs\",int(bill2), \"and net amount payable is Rs \",int(privileged_customers2))\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "16e23a26",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the bill amount: \n",
+      "5000\n",
+      "Do you have a membership card? \n",
+      "N\n",
+      "Thank you! Your total bill amount is Rs 5000 discount is Rs 150 and net amount payable is Rs  4850\n"
+     ]
+    }
+   ],
+   "source": [
+    "#12.In a shopping mall, privileged customers (if they have a membership card) are being given a 10% discount on the billed amount, and the others are being given a 3% discount. Write a program to accept the billing amount and confirm the membership card from the customer; calculate and display the net amount to be paid by the customer.\n",
+    "bill=int(input(\"Enter the bill amount: \\n\"))\n",
+    "membership=input(\"Do you have a membership card? \\n\")\n",
+    "membership=membership.capitalize()\n",
+    "bill1=bill*10/100\n",
+    "privileged_customers=bill-bill1 \n",
+    "bill2=bill*3/100\n",
+    "privileged_customers2=bill-bill2\n",
+    "\n",
+    "\n",
+    "if(membership==\"Y\"):\n",
+    "    print(\"Thank you! Your total bill amount is Rs\",int(bill), \"discount is Rs\",int(bill1), \"and net amount payable is Rs \",int(privileged_customers))\n",
+    "else:\n",
+    "     print(\"Thank you! Your total bill amount is Rs\",int(bill), \"discount is Rs\",int(bill2), \"and net amount payable is Rs \",int(privileged_customers2))\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "744a039f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the 1st number num1: \n",
+      "45\n",
+      "Enter the 1st number num2 \n",
+      "75\n",
+      "Enter the 1st number num3 \n",
+      "45\n",
+      "The biggest of the 3 numbers entered is: 75\n"
+     ]
+    }
+   ],
+   "source": [
+    "#13.   Write a program to accept 3 numbers from the user and find the biggest of them.\n",
+    "num1=int(input(\"Enter the 1st number num1: \\n\"))\n",
+    "num2=int(input(\"Enter the 1st number num2 \\n\"))\n",
+    "num3=int(input(\"Enter the 1st number num3 \\n\"))\n",
+    "if(num1>num2):\n",
+    "    print(\"The biggest of the 3 numbers entered is:\",num1)\n",
+    "elif(num2>num3):\n",
+    "    print(\"The biggest of the 3 numbers entered is:\",num2)\n",
+    "else:\n",
+    "    print(\"The biggest of the 3 numbers entered is:\",num3)\n",
+    "    \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "6aeca828",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the marks scored in 1st subject: \n",
+      "40\n",
+      "Enter the marks scored in 2nd subject: \n",
+      "60\n",
+      "Enter the marks scored in 3rd subject: \n",
+      "80\n",
+      "Total marks: 180\n",
+      "Average is: 60.0\n",
+      "Grade:B\n"
+     ]
+    }
+   ],
+   "source": [
+    "#14.Write a program to accept the marks scored in three subjects; determine the sum and average of the entered marks. Grade is awarded based on following criteria.\n",
+    "marks1=int(input(\"Enter the marks scored in 1st subject: \\n\"))\n",
+    "marks2=int(input(\"Enter the marks scored in 2nd subject: \\n\"))\n",
+    "marks3=int(input(\"Enter the marks scored in 3rd subject: \\n\"))\n",
+    "totalmarks=marks1+marks2+marks3\n",
+    "avg=(totalmarks/3)\n",
+    "if(avg<35):\n",
+    "    print(\"Total marks:\",int(totalmarks))\n",
+    "    print(\"Average is:\",(avg))\n",
+    "    print(\"Grade:C\")\n",
+    "elif(avg>35 or avg<60):\n",
+    "    print(\"Total marks:\",int(totalmarks))\n",
+    "    print(\"Average is:\",(avg))\n",
+    "    print(\"Grade:B\")\n",
+    "else:\n",
+    "    print(\"Total marks:\",int(totalmarks))\n",
+    "    print(\"Average is:\",(avg))\n",
+    "    print(\"Grade:A\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "52f49610",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the number of natural numbers to be generated: \n",
+      "5\n",
+      "1 2 3 4 5 "
+     ]
+    }
+   ],
+   "source": [
+    "#15. Write a program to generate the first 'N' natural numbers. Accept the value of 'N' from the user.\n",
+    "num=int(input(\"Enter the number of natural numbers to be generated: \\n\"))\n",
+    "for i in range(1,num+1):\n",
+    "    print(i,end=\" \")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 340,
+   "id": "9a1e210f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter any number: \n",
+      "9\n",
+      "The entered number 9 is not a prime number\n"
+     ]
+    }
+   ],
+   "source": [
+    "#16.Write a program to accept a number and determine whether it is a prime number or not.\n",
+    "num=int(input(\"Enter any number: \\n\"))\n",
+    "for i in range(1,2):\n",
+    "    if(num%i==0):\n",
+    "        print(\"The entered number\",num, \"is not a prime number\")\n",
+    "    else:\n",
+    "         print(\"The entered number\",num, \"is  a prime number\")\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 348,
+   "id": "29ac4d54",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter any number: \n",
+      "9\n",
+      "The entered number 9 is not a prime number\n"
+     ]
+    }
+   ],
+   "source": [
+    "#16.Write a program to accept a number and determine whether it is a prime number or not.\n",
+    "num=int(input(\"Enter any number: \\n\"))\n",
+    "for i in range(2,num):\n",
+    "    if(num%i==0):\n",
+    "        print(\"The entered number\",num, \"is not a prime number\")\n",
+    "        break\n",
+    "else:\n",
+    "         print(\"The entered number\",num, \"is  a prime number\")\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 349,
+   "id": "951e11e6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter any number: \n",
+      "7\n",
+      "The entered number 7 is  a prime number\n"
+     ]
+    }
+   ],
+   "source": [
+    "#16.Write a program to accept a number and determine whether it is a prime number or not.\n",
+    "num=int(input(\"Enter any number: \\n\"))\n",
+    "for i in range(2,num):\n",
+    "    if(num%i==0):\n",
+    "        print(\"The entered number\",num, \"is not a prime number\")\n",
+    "        break\n",
+    "else:\n",
+    "         print(\"The entered number\",num, \"is  a prime number\")\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "5dc9ec3f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the number of natural numbers to be generated: \n",
+      "5\n",
+      "5 4 3 2 1 "
+     ]
+    }
+   ],
+   "source": [
+    "#17.Write a program to generate the first 'N' natural numbers and print them in descending order.\n",
+    "num=int(input(\"Enter the number of natural numbers to be generated: \\n\"))\n",
+    "for i in range(num,0,-1):\n",
+    "    print(i,end=\" \")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 371,
+   "id": "137b877f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the lower bound value: \n",
+      "5\n",
+      "Enter the upper bound value: \n",
+      "15\n",
+      "The prime numbers between 5 and 15 are: 5 7 11 13 "
+     ]
+    }
+   ],
+   "source": [
+    "#18.Write a program to accept the lower bound number and the upper bound number from the user and print the prime numbers between them.\n",
+    "num1=int(input(\"Enter the lower bound value: \\n\"))\n",
+    "num2=int(input(\"Enter the upper bound value: \\n\"))\n",
+    "print(\"The prime numbers between\",num1, \"and\",num2, \"are:\",end=\" \")\n",
+    "for i in range(num1,num2+1):\n",
+    "    for j in range(2,i):\n",
+    "        if(i%j==0):\n",
+    "            break\n",
+    "    else:\n",
+    "        print(i,end=\" \")\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "ab2c6ae1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the upper bound number to generate the Fibonacci numbers: \n",
+      "8\n",
+      "0 1 1 2 3 5 8 13 "
+     ]
+    }
+   ],
+   "source": [
+    "#19.Write a program to accept a number and print the Fibonacci series up to the entered number.\n",
+    "fib=int(input(\"Enter the upper bound number to generate the Fibonacci numbers: \\n\"))\n",
+    "a=0\n",
+    "b=1\n",
+    "s=0\n",
+    "for i in range(fib):\n",
+    "    print(s,end=\" \")\n",
+    "    s=a+b\n",
+    "    b=a\n",
+    "    a=s\n",
+    "\n",
+    " "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "id": "e3e87695",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the number to generate its multiplication table: \n",
+      "19\n",
+      "Multiplication table for 19 is :\n",
+      "19 * 1 = 19\n",
+      "19 * 2 = 38\n",
+      "19 * 3 = 57\n",
+      "19 * 4 = 76\n",
+      "19 * 5 = 95\n",
+      "19 * 6 = 114\n",
+      "19 * 7 = 133\n",
+      "19 * 8 = 152\n",
+      "19 * 9 = 171\n",
+      "19 * 10 = 190\n"
+     ]
+    }
+   ],
+   "source": [
+    "#20.Write a program to accept a number from the user and print its multiplication table (upto “times 10”).\n",
+    "mul=int(input(\"Enter the number to generate its multiplication table: \\n\"))\n",
+    "print(\"Multiplication table for\" ,mul, \"is :\")\n",
+    "for i in range(1,11):\n",
+    "    \n",
+    "    print(mul,\"*\",i,\"=\",mul*i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "id": "0ce76248",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter any number: \n",
+      "5\n",
+      "The factorial of 5 is 120\n"
+     ]
+    }
+   ],
+   "source": [
+    "#21.Write a program to accept a number and find its factorial.\n",
+    "fact=int(input(\"Enter any number: \\n\"))\n",
+    "fact1=fact\n",
+    "for i in range(1,fact):\n",
+    "    fact=fact*i\n",
+    "print(\"The factorial of\" ,fact1, \"is\" ,fact)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 123,
+   "id": "5227943b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the number to generate to display the sum of the series \n",
+      "5\n",
+      "2.283333333333333\n"
+     ]
+    }
+   ],
+   "source": [
+    "#22.Write a program to accept a number “n” from the user; then display the sum of the series\n",
+    "num1=int(input(\"Enter the number to generate to display the sum of the series \\n\" ))\n",
+    "sum=0\n",
+    "for i in range(1,num1+1):\n",
+    "    sum=sum+1/i\n",
+    "print(sum)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 119,
+   "id": "06c8dd63",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the number to generate to display the sum of the series \n",
+      "5\n",
+      "1,3,\n",
+      "\n",
+      "the sum is 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "#23Write a program to accept a number “n” from the user; then display the series 1,3,5,7,9,…,n and find the sum of the numbers in this series.\n",
+    "num=int(input(\"Enter the number to generate to display the sum of the series \\n\" ))\n",
+    "sum=0\n",
+    "for i in range(1,num,2):\n",
+    "    print(i, end=\",\")\n",
+    "    sum=sum+i\n",
+    "print(\"\\n\")\n",
+    "print(\"the sum is\",sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 127,
+   "id": "578353b2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the number to generate to display the sum of the series \n",
+      "5\n",
+      "the sum is 0.19029166666666666\n"
+     ]
+    }
+   ],
+   "source": [
+    "#24.Write a program to accept a number “n” from the user; find the sum of the series 1/23+1/33+1/43……..+1/n3\n",
+    "num=int(input(\"Enter the number to generate to display the sum of the series \\n\" ))\n",
+    "sum=0\n",
+    "for i in range(2,num+2):\n",
+    "    sum=sum+1/i**3\n",
+    "print(\"the sum is\",sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 476,
+   "id": "428a511c",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 \n",
+      "2 3 \n",
+      "4 5 6 7 \n",
+      "8 9 10 11 \n"
+     ]
+    }
+   ],
+   "source": [
+    "# 25.\n",
+    "# 1\n",
+    "# 2 3\n",
+    "# 4 5 6 7\n",
+    "# 8 9 10 11\n",
+    "\n",
+    "for i in range(1):\n",
+    "    for j in range(1,2):\n",
+    "        print(j,end=\" \")\n",
+    "    print()\n",
+    "    for j in range(2,4):\n",
+    "        print(j,end=\" \")\n",
+    "    print()\n",
+    "    for j in range(4,8):\n",
+    "        print(j,end=\" \")\n",
+    "    print()\n",
+    "    for j in range(8,12):\n",
+    "        print(j,end=\" \")\n",
+    "print()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "f495dba6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 2 3 \n",
+      "4 5 6 \n",
+      "7 8 9 \n"
+     ]
+    }
+   ],
+   "source": [
+    "#26.\n",
+    "# 1 2 3\n",
+    "# 4 5 6\n",
+    "# 7 8 9\n",
+    "\n",
+    "# for i in range(1):\n",
+    "#     for j in range(1,4):\n",
+    "#         print(j,end=\" \")\n",
+    "#     print()\n",
+    "#     for j in range(4,7):\n",
+    "#         print(j,end=\" \")\n",
+    "#     print()\n",
+    "#     for j in range(7,10):\n",
+    "#         print(j,end=\" \")\n",
+    "#     print()\n",
+    "  \n",
+    "num=1\n",
+    "n=4\n",
+    "for i in range(1,n):\n",
+    "    for j in range(n-1):\n",
+    "        print(num,end=\" \")\n",
+    "        num=num+1\n",
+    "    print(\"\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 242,
+   "id": "2d3c4946",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "1 \n",
+      "1 2 \n",
+      "1 2 3 \n",
+      "1 2 3 4 \n",
+      "1 2 3 4 5 \n"
+     ]
+    }
+   ],
+   "source": [
+    "# 27.\n",
+    "# 1\n",
+    "# 1 2\n",
+    "# 1 2 3\n",
+    "# 1 2 3 4\n",
+    "# 1 2 3 4 5\n",
+    "\n",
+    "for i in range(6):\n",
+    "    for j in range(1,i+1):\n",
+    "        print(j,end=\" \")\n",
+    "    print()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 256,
+   "id": "f97f9d50",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 2 3 4 5 \n",
+      "1 2 3 4 \n",
+      "1 2 3 \n",
+      "1 2 \n",
+      "1 \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 28.\n",
+    "# 1 2 3 4 5\n",
+    "# 1 2 3 4\n",
+    "# 1 2 3\n",
+    "# 1 2\n",
+    "# 1\n",
+    "for i in range(5,-1,-1):\n",
+    "    for j in range(1,i+1):\n",
+    "        print(j,end=\" \")\n",
+    "    print()\n",
+    "       "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 257,
+   "id": "a4c7d794",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# 30.\n",
+    "# 1\n",
+    "# 1 2 1\n",
+    "# 1 2 3 2 1\n",
+    "# 1 2 3 4 3 2 1\n",
+    "# 1 2 3 4 5 4 3 2 1\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "734a70d6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "19 38 57 \n",
+      "76 95 114 \n",
+      "133 152 171 \n"
+     ]
+    }
+   ],
+   "source": [
+    "# 31.\n",
+    "# 19 38 57\n",
+    "# 76 95 114\n",
+    "# 133 152 171\n",
+    "\n",
+    "num=1\n",
+    "for i in range(3):\n",
+    "    for j in range(1,4):\n",
+    "        print(num*19,end=\" \")\n",
+    "        num=num+1     \n",
+    "    print()\n",
+    "       "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 478,
+   "id": "81224461",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A B C \n",
+      "D E F \n",
+      "G H I \n"
+     ]
+    }
+   ],
+   "source": [
+    "# 32.\n",
+    "# A B C\n",
+    "# D E F\n",
+    "# G H I\n",
+    "\n",
+    "for i in range(1):\n",
+    "    for j in \"A\",\"B\",\"C\":\n",
+    "        print(str(j),end=\" \")\n",
+    "    print()\n",
+    "    for j in \"D\",\"E\",\"F\":\n",
+    "        print(j,end=\" \")\n",
+    "    print()\n",
+    "    for j in \"G\",\"H\",\"I\":\n",
+    "        print(j,end=\" \")\n",
+    "    print()\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "9f81cbd5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 \n",
+      "1 2 1 \n",
+      "1 2 3 2 1 \n",
+      "1 2 3 4 3 2 1 \n",
+      "1 2 3 4 5 4 3 2 1 \n"
+     ]
+    }
+   ],
+   "source": [
+    "# 33.\n",
+    "# 1 1\n",
+    "# 1 2 2 1\n",
+    "# 1 2 3 3 2 1\n",
+    "# 1 2 3 4 3 2 1\n",
+    "\n",
+    "for i in range(5):\n",
+    "    num=1\n",
+    "    for j in range(i):\n",
+    "        print(num,end=\" \")\n",
+    "        num=num+1\n",
+    "    for k in range(i+1):\n",
+    "        print(num,end=\" \")\n",
+    "        num=num-1\n",
+    "    print(\"\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "495a24be",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "19 0 0 \n",
+      "0 19 0 \n",
+      "0 0 19 \n"
+     ]
+    }
+   ],
+   "source": [
+    "34.\n",
+    "# 19 0 0\n",
+    "# 0 19 0\n",
+    "# 0 0 19\n",
+    "\n",
+    "for i in range(0,3):\n",
+    "    for j in range(0,3):\n",
+    "        if(i==j):     \n",
+    "            print(\"19\",end=\" \")\n",
+    "        else:\n",
+    "            print(\"0\",end=\" \")\n",
+    "    print()\n",
+    "\n",
+    "        \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 455,
+   "id": "6db6dd51",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "* * * * * * * * * \n",
+      "        *\n",
+      "        *\n",
+      "        *\n",
+      "        *\n",
+      "        *\n",
+      "* * * * * * * * * "
+     ]
+    }
+   ],
+   "source": [
+    "# 35.\n",
+    "# * * * * * * * * *\n",
+    "#          *\n",
+    "#          *\n",
+    "#          *\n",
+    "#          *\n",
+    "#          *\n",
+    "# * * * * * * * * *\n",
+    "\n",
+    "for i in range(1):\n",
+    "    for j in range(0,9):\n",
+    "        print(\"*\",end=\" \")\n",
+    "    print()\n",
+    "    for i in range(0,5):\n",
+    "        for j in range(1,5):\n",
+    "            print(\" \",end=\" \")\n",
+    "        for j in range(0,1):\n",
+    "            print(\"*\")\n",
+    "    for j in range(0,9):\n",
+    "        print(\"*\",end=\" \")\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "7585363c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "@ @ @ @ \n",
+      "@     @ \n",
+      "@ @ @ @ \n",
+      "@     @ \n",
+      "@     @ \n"
+     ]
+    }
+   ],
+   "source": [
+    "#36.\n",
+    "# @ @ @ @\n",
+    "# @     @\n",
+    "# @ @ @ @\n",
+    "# @     @\n",
+    "# @     @\n",
+    "\n",
+    "for i in range(5):\n",
+    "    for j in range(4):\n",
+    "        if(i==0 or i==2):\n",
+    "            print(\"@\",end=\" \")\n",
+    "        else:\n",
+    "            if(j==0 or j==3):\n",
+    "                print(\"@\",end=\" \")\n",
+    "            else:\n",
+    "                print(\" \",end=\" \")\n",
+    "    print()\n",
+    "       \n",
+    "             \n",
+    "        \n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "id": "b751694b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "* * * * * * * \n",
+      "            *         * \n",
+      "            *         * \n",
+      "  *         * \n",
+      "* * * * * * * * * * * * \n",
+      "*           * \n",
+      "*           * \n",
+      "*           * \n",
+      "            * * * * * * \n"
+     ]
+    }
+   ],
+   "source": [
+    "#37.\n",
+    "\n",
+    "for i in range (9):\n",
+    "    if i==0:\n",
+    "        for j in range(7):\n",
+    "            print(\"*\",end=\" \")\n",
+    "    elif i==1 or i==2:\n",
+    "        for j in range(12):\n",
+    "            if j==6 or j==11:\n",
+    "                print(\"*\",end=\" \")\n",
+    "            else:\n",
+    "                print(\" \",end=\" \")\n",
+    "    elif i==4:\n",
+    "        for j in range(12):\n",
+    "            print(\"*\",end=\" \")\n",
+    "    elif i==3:\n",
+    "        for j in range(7):\n",
+    "            if j==1 or j==6 or j==7:\n",
+    "                print(\"*\",end=\" \")\n",
+    "            else:\n",
+    "                print(\" \",end=\" \")\n",
+    "    elif i==8:\n",
+    "        for j in range(6):\n",
+    "            print(\" \",end=\" \")\n",
+    "        for j in range(6):\n",
+    "            print(\"*\",end=\" \")\n",
+    "            \n",
+    "    else:\n",
+    "        for j in range(7):\n",
+    "            if j==0 or j==6:\n",
+    "                print(\"*\",end=\" \")\n",
+    "            else:\n",
+    "                print(\" \",end=\" \")\n",
+    "    print(\"\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 91,
+   "id": "0a9064ff",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter :5\n",
+      "Enter :6\n",
+      "Enter :7\n",
+      "Enter :4\n",
+      "Enter :5\n",
+      "Enter :6\n",
+      "Enter :5\n",
+      "Enter :6\n",
+      "Enter :7\n",
+      "5 6 7 \n",
+      "4 5 6 \n",
+      "5 6 7 \n",
+      "The biggest number is:  7\n",
+      "The smallest number is:  4\n",
+      "The sum is:  51\n"
+     ]
+    }
+   ],
+   "source": [
+    "#38.Write a program to find the biggest, smallest and sum of the elements in the given 3 X 3 matrix.\n",
+    "matrix = []\n",
+    "maxi=0\n",
+    "sum1=0\n",
+    "for i in range(3):          \n",
+    "    a =[]\n",
+    "    for j in range(3):      \n",
+    "         a.append(int(input(\"Enter :\")))\n",
+    "    matrix.append(a)\n",
+    "for i in range(3):\n",
+    "    for j in range(3):\n",
+    "        print(matrix[i][j], end = \" \")\n",
+    "    print()\n",
+    "for i in range(3):\n",
+    "    for j in range(3):\n",
+    "        if(matrix[i][j]>maxi):\n",
+    "            maxi=matrix[i][j]\n",
+    "        else:\n",
+    "            continue\n",
+    "mini=maxi\n",
+    "for i in range(3):\n",
+    "    for j in range(3):\n",
+    "        if(matrix[i][j]<mini):\n",
+    "            mini=matrix[i][j]\n",
+    "        else:\n",
+    "            continue\n",
+    "            \n",
+    "for i in range(3):\n",
+    "    for j in range(3):\n",
+    "        sum1=sum1+matrix[i][j]\n",
+    "print(\"The biggest number is: \",maxi)\n",
+    "print(\"The smallest number is: \",mini)\n",
+    "print(\"The sum is: \",sum1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 103,
+   "id": "988f1d22",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 2 3 4 5 \n",
+      "5 1 2 3 4 \n",
+      "4 5 1 2 3 \n",
+      "3 4 5 1 2 \n",
+      "2 3 4 5 1 \n",
+      "1 2 3 4 5 "
+     ]
+    }
+   ],
+   "source": [
+    "#39.\n",
+    "# 1 2 3 4 5\n",
+    "# 5 1 2 3 4\n",
+    "# 4 5 1 2 3\n",
+    "# 3 4 5 1 2\n",
+    "# 2 3 4 5 1\n",
+    "for i in range(0,5):\n",
+    "    for j in range(1,6-i):\n",
+    "        print(j,end=\" \")\n",
+    "    print()\n",
+    "    for k in range(5-i,6):\n",
+    "        print(k,end=\" \")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 99,
+   "id": "48d1e749",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 2 3 4 \n",
+      "5 6 7 \n",
+      "8 9 \n",
+      "10 \n"
+     ]
+    }
+   ],
+   "source": [
+    "#40.\n",
+    "# 1 2 3 4\n",
+    "# 5 6 7\n",
+    "# 8 9\n",
+    "# 10\n",
+    "n=1\n",
+    "for i in range(4):\n",
+    "    for j in range(i,4):\n",
+    "        print(n,end=\" \")\n",
+    "        n=n+1\n",
+    "    print()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "id": "ff3a24cf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter any number:\n",
+      "14567\n",
+      "The number of digits in the entered number 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "# While – loop\n",
+    "\n",
+    "# 41.Write a program to accept a number from the user and count the number of digits in the number.\n",
+    "\n",
+    "n=int(input(\"Enter any number:\\n\"))\n",
+    "count=0\n",
+    "i=1\n",
+    "\n",
+    "while n!=0:\n",
+    "    count=count+1\n",
+    "    n=n//10   \n",
+    "print(\"The number of digits in the entered number\",count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 319,
+   "id": "2a7a2497",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter any number: \n",
+      "14567\n",
+      "The sum of digits of the entered number is 23\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 42.Write a program to accept a number from the user and find the sum of digits in the entered number.\n",
+    "# n=(input(\"Enter any number:\\n\"))\n",
+    "\n",
+    "n=input(\"Enter any number: \\n\")\n",
+    "sum=0\n",
+    "for i in str(n):\n",
+    "    sum=sum+int(i)\n",
+    "print(\"The sum of digits of the entered number is\",sum)\n",
+    "    \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "id": "f92fd1f0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter any number: 45646\n",
+      "Reverse of entered number is :\n",
+      "64654"
+     ]
+    }
+   ],
+   "source": [
+    "# 43.Write a program to accept a number from the user and find the reverse of the entered number.\n",
+    "x=int(input(\"Enter any number: \"))\n",
+    "new=0\n",
+    "sum=0\n",
+    "print(\"Reverse of entered number is :\")\n",
+    "while (x!=0):\n",
+    "    num=x%10\n",
+    "    sum=sum+num\n",
+    "    print(num,end=\"\")\n",
+    "    y=x/10\n",
+    "    new=int(y)\n",
+    "    x=new"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "29016d87",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the number: \n",
+      "153\n",
+      "the number is armstrong\n"
+     ]
+    }
+   ],
+   "source": [
+    "#44.Write a program to accept a number from the user and determine whether it is an Armstrong number or not.\n",
+    "x=int(input(\"Enter the number: \\n\"))\n",
+    "x1=x\n",
+    "new=0\n",
+    "sum=0\n",
+    "while (x!=0 ):\n",
+    "    num=x%10\n",
+    "    sum=sum+(num**3)\n",
+    "    y=x/10\n",
+    "    new=int(y)\n",
+    "    x=new\n",
+    "    \n",
+    "if(x1==sum):\n",
+    "    print(\"the number is armstrong\")\n",
+    "else:\n",
+    "    print(\"The no is not armstrong\")\n",
+    "        \n",
+    "    \n",
+    " \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "4a658b4c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter any number: \n",
+      "9981\n",
+      "Single digit sum is: 9\n"
+     ]
+    }
+   ],
+   "source": [
+    "#45.Write a program to accept a number from the user and calculate the sum of digits of the number; repeat the operation till the sum gets to be a single digit number.\n",
+    "n=int(input(\"Enter any number: \\n\"))\n",
+    "r=0\n",
+    "while(n>9):\n",
+    "    sum=0\n",
+    "    while(n>0):\n",
+    "        r=n%10\n",
+    "        sum=sum+r\n",
+    "        n=int(n/10)\n",
+    "    n=sum\n",
+    "\n",
+    "print(\"Single digit sum is:\" ,sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "id": "4c675979",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the number: 97512\n",
+      "5\n",
+      "7\n",
+      "9\n",
+      "The number of  prime digits in the entered number is : 3\n"
+     ]
+    }
+   ],
+   "source": [
+    "#46.Write a program to accept a number from the user and count the number of prime digits.\n",
+    "x=int(input(\"Enter the number: \"))\n",
+    "x1=x\n",
+    "new=0\n",
+    "count=0\n",
+    "while (x!=0):\n",
+    "    a=x%10\n",
+    "    y=x/10\n",
+    "    new=int(y)\n",
+    "    x=new\n",
+    "    if a>1:\n",
+    "        for i in range(2,a):\n",
+    "            if a%i==0:\n",
+    "                continue\n",
+    "            else:\n",
+    "                count=count+1\n",
+    "                print(a)\n",
+    "                break\n",
+    "                \n",
+    "print(\"The number of  prime digits in the entered number is :\",count)\n",
+    "\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "32a7e209",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the number: 5\n",
+      "The factorial of the number is: \n",
+      "120\n"
+     ]
+    }
+   ],
+   "source": [
+    "#47.Write a program to accept a number and find the factorial of the number (using while loop).\n",
+    "num=int(input(\"Enter the number: \"))\n",
+    "fact=1\n",
+    "\n",
+    "if num==0:\n",
+    "    print(\"The factorial of 0 is 1\")\n",
+    "if num==1:\n",
+    "    print(\"The factorial of 1 is 1\")\n",
+    "print(\"The factorial of the number is: \")\n",
+    "while num>1:\n",
+    "    fact=fact*num\n",
+    "    num=num-1\n",
+    "    if num==1:\n",
+    "        print(fact)\n",
+    "        break"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "id": "3a4e98e9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a four digit number: 5698\n",
+      "5*1000= 5000\n",
+      "6*100= 600\n",
+      "9*10= 90\n",
+      "8*1= 8\n"
+     ]
+    }
+   ],
+   "source": [
+    "#48.Write a program to accept a four digit number from the user and display its denomination.\n",
+    "n=int(input(\"Enter a four digit number: \"))\n",
+    "x=1000\n",
+    "for i in range(1,5):\n",
+    "    n1=int(n/x)\n",
+    "    new_num=n1*x\n",
+    "    print(str(n1)+\"*\"+str(int(x))+\"=\",int(new_num))\n",
+    "    num=n-new_num\n",
+    "    n=num\n",
+    "    x=x/10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "id": "2634427b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a four digit number: 14385\n",
+      "25496"
+     ]
+    }
+   ],
+   "source": [
+    "#49.Write a program to accept a five digit number from the user, increment each digit by one and display the number (digit 9 gets incremented to 0).\n",
+    "n=int(input(\"Enter a four digit number: \"))\n",
+    "x=10000\n",
+    "for i in range(1,6):\n",
+    "    n1=int(n/x)\n",
+    "    if n1==9:\n",
+    "        print(\"0\",end=\"\")\n",
+    "    else:\n",
+    "        print(n1+1,end=\"\")\n",
+    "    new_num=n1*x\n",
+    "    num=n-new_num\n",
+    "    n=num\n",
+    "    x=x/10\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 490,
+   "id": "032046b2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter first number \n",
+      "5\n",
+      "Enter second number \n",
+      "5\n",
+      "3125\n"
+     ]
+    }
+   ],
+   "source": [
+    "#50.rite a program to accept 2 numbers “m” and “n” from the user and determine m^n (without using predefined functions).\n",
+    "m=int(input(\"Enter first number \\n\"))\n",
+    "n=int(input(\"Enter second number \\n\"))\n",
+    "result=(m**n)\n",
+    "print(\"The result is \"result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "0141798b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a Charecter \n",
+      "a\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "'It is a vowel'"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Switch statement\n",
+    "# 51.Write a program to accept a character from the user and check whether it is a vowel or consonant using switch statement.\n",
+    "letter=input(\"Enter a Charecter \\n\")\n",
+    "alp=letter.upper()\n",
+    "def opt(alp):\n",
+    "    switch={\n",
+    "        'A':\"It is a vowel\",\n",
+    "        'E':\"It is a vowel\",\n",
+    "        'I':\"It is a vowel\",\n",
+    "        'O':\"It is a vowel\",\n",
+    "        'U':\"It is a vowel\",            \n",
+    "\n",
+    "    }\n",
+    "    return switch.get(alp,\"It is not a vowel\")\n",
+    "opt(alp)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 104,
+   "id": "6c4356ba",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (998519745.py, line 5)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Input \u001b[1;32mIn [104]\u001b[1;36m\u001b[0m\n\u001b[1;33m    int main(){\u001b[0m\n\u001b[1;37m        ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "#WRITTEN IN C LANGUAGE\n",
+    "#52.Write a program to accept two numbers num1, num2 and an operator. Simulate the calculator using switch statement.\n",
+    "#include<stdio.h>\n",
+    "\n",
+    "int main(){\n",
+    "    int n=0;\n",
+    "    int m =0;\n",
+    "    int opt=0;\n",
+    "    printf(\"Enter the 1st Operand num1: \\n\");\n",
+    "    scanf(\"%d\",&n);\n",
+    "    printf(\"Enter the 2nd Operand num2: \\n\");\n",
+    "    scanf(\"%d\",&m);\n",
+    "    printf(\"1.add 2.mul 3.div 4.mod 5.sub  \\n\");\n",
+    "    printf(\"Enter the operator \\n\");\n",
+    "    scanf(\"%d\",&opt);\n",
+    "    switch (opt){\n",
+    "        case 1 : printf(\"The sum of %d and %d is %d\",m,n,m+n);\n",
+    "        break;\n",
+    "        case 2 : printf(\"The sum of %d and %d is %d\",m,n,m*n);\n",
+    "        break;\n",
+    "        case 3 : printf(\"The sum of %d and %d is %d\",m,n,m/n);\n",
+    "        break;\n",
+    "        case 4 : printf(\"The sum of %d and %d is %d\",m,n,m%n);\n",
+    "        break;\n",
+    "        case 5 : printf(\"The sum of %d and %d is %d\",m,n,m-n);\n",
+    "        break;\n",
+    "    }\n",
+    "    \n",
+    "}\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "id": "21357b26",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "12\n",
+      "13\n",
+      "21\n",
+      "23\n",
+      "31\n",
+      "32\n"
+     ]
+    }
+   ],
+   "source": [
+    "#53.Write a program to generate the following output\n",
+    "for i in range(1,4):\n",
+    "    for j in range(1,4):\n",
+    "        if(i==j):\n",
+    "            continue\n",
+    "        else:\n",
+    "            print(i,end =\"\")\n",
+    "            print(j,end =\"\")\n",
+    "        print()\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 101,
+   "id": "cf043b41",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Sum of first 7 terms is :  2.7180555555555554\n"
+     ]
+    }
+   ],
+   "source": [
+    "#54.Write a program to add the first 7 terms of the following series using a for loop:\n",
+    "#1/1!+2/2!+3 /3!+....\n",
+    "result=0\n",
+    "f=1\n",
+    "n=7\n",
+    "for i in range(1,n+1):\n",
+    "    f=f*i\n",
+    "    result=result+(i/f)\n",
+    "\n",
+    "print(\"Sum of first 7 terms is : \", result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e42acfd5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#55.Write a program to fill the entire screen with a smiling face. The smiling face has an ASCII value 1.\n",
+    "\n",
+    "#include<stdio.h>\n",
+    "#include<conio.h>\n",
+    "void main()\n",
+    "{\n",
+    "    int i;\n",
+    "    char ch=1; \n",
+    "\n",
+    "    for(i=0;i<2000;i++)\n",
+    "    {\n",
+    "        printf(\"%c\", ch);\n",
+    "    }\n",
+    "    getch();\n",
+    "}"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
